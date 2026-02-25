@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Panel Biblioteca: PRUEBA</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    
+    <aside class="sidebar">
+        <h2>📚 Biblioteca</h2>
+        <nav>
+            <button onclick="mostrar('dashboard')">Dashboard</button>
+            <button onclick="mostrar('libros')">Libros</button>
+            <button onclick="mostrar('prestamos')">Préstamos</button>
+            <button onclick="mostrar('usuarios')">Usuarios</button>
+            <button onclick="mostrar('reportes')">Reportes</button>
+        </nav>
+    </aside>
+
+    
+    <div class="main">
+
+        <header class="topbar">
+            <h1>Panel Administrativo</h1>
+            <div class="user"> Admin</div>
+        </header>
+
+        <section id="dashboard" class="contenido activo">
+            <h2>Resumen</h2>
+            <div class="grid">
+                <div class="card"> Libros: 120</div>
+                <div class="card"> Usuarios: 45</div>
+                <div class="card"> Préstamos: 30</div>
+                <div class="card"> Multas: $320</div>
+            </div>
+        </section>
+
+        <section id="libros" class="contenido">
+            <h2>Gestión de Libros</h2>
+            <div class="panel">
+                <input type="text" placeholder="Título">
+                <input type="text" placeholder="Autor">
+                <button>Agregar</button>
+            </div>
+            <div class="tabla">Listado de libros</div>
+        </section>
+
+        <section id="prestamos" class="contenido">
+            <h2>Préstamos</h2>
+            <div class="panel">
+                <input type="text" placeholder="Usuario">
+                <input type="text" placeholder="Libro">
+                <button>Registrar</button>
+            </div>
+            <div class="tabla">Historial</div>
+        </section>
+
+        <section id="usuarios" class="contenido">
+            <h2>Usuarios</h2>
+            <div class="panel">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo">
+                <button>Crear</button>
+            </div>
+            <div class="tabla">Lista de usuarios</div>
+        </section>
+
+        <section id="reportes" class="contenido">
+            <h2>Reportes</h2>
+            <div class="grid">
+                <div class="card"> Libros más prestados</div>
+                <div class="card"> Actividad mensual</div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

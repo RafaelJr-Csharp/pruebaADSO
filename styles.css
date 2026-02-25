@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+}
+
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+
+.sidebar {
+    width: 240px;
+    background: #111827;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    background: #1f2937;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.sidebar button:hover {
+    background: #374151;
+}
+
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topbar {
+    background: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.contenido {
+    display: none;
+    padding: 25px;
+}
+
+.activo {
+    display: block;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+.panel {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.panel input {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.panel button {
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+
+.tabla {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    .sidebar button {
+        text-align: center;
+        font-size: 12px;
+    }
+}
